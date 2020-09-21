@@ -1,0 +1,76 @@
+body{
+    background: url(https://cdn.pixabay.com/photo/2015/11/05/08/21/geometry-1023846_960_720.jpg) center center fixed no-repeat ;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 20%;
+    margin: auto;
+    overflow: hidden;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255,0.3);
+    border-radius: 18px ;
+    text-align: center;
+    margin-top: 7%;
+    transition: 1s ease-in-out;
+}
+.container:hover{
+    background-color: rgba(255, 255, 255,1);
+}
+hr{
+    width: 80%;
+}
+
+.fb{
+    padding: 0.5rem 2rem;
+    color: #fff;
+    background-color: rgb(64, 64, 240); 
+    border : none;
+    border-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container input{
+    padding: 0.5rem;
+    width: 70%;
+}
+
+.container input[type=checkbox]{
+    width: auto;
+}
+
+.btn{
+    padding: 12px;
+    background-color: rgb(43, 226, 134);
+    font-size: 1rem;
+    width: 40%;
+    border-radius: 7px;
+    border: none;
+}
+/* Pop up Animation starts here */
+.container{
+    margin-top: -150%;
+    animation: drop 1s forwards ease-in;
+}
+
+@keyframes drop{
+    0%{opacity: 0;}
+    70%{margin-top: 10%;}
+    100%{margin-top: 7%;}
+}
+/* Pop up Animation ends here */
+
+@media (min-width : 200px){
+    .container{
+        width: 300px;
+    }
+}
+@media(max-width : 800px){
+    .btn{
+        padding: 10px;
+    }
+}

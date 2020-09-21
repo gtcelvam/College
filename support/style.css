@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url(https://cdn.pixabay.com/photo/2014/09/07/21/50/library-438389_960_720.jpg) fixed center center no-repeat ;
+    background-size: cover;
+}
+.head{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(119, 93, 136, 0.2);
+    text-align: left;
+    top: 0%;
+    left: 0%;
+}
+.head h1 a{
+    line-height: 50px;
+    color: rgb(255, 255, 255);
+    padding: 0px 20px;
+    text-decoration: none;
+}
+section{
+    margin: 50px 0px;
+    border: 1px solid black;
+    background-color:  rgba(119, 93, 136, 0.2);
+    box-shadow: 0 0 6px rgb(0, 0, 0);
+
+}
+.question{
+    position: relative;
+    width: 550px;
+}
+.question-title{
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0,0.4);
+}
+.question-title:hover{
+    background-color: rgba(212, 212, 211,0.5);
+}
+.question-title p{
+    line-height: 20px;
+    font-size: 20px;
+    position: absolute;
+    margin: auto;
+}
+
+.question-title button{
+    position: relative;
+    display: inline;
+    color: rgb(0, 0, 0);
+    padding: 0px 5px;
+    margin-right: -90%;
+    border-radius: 2px;
+    background: none;
+    border: 1px solid rgb(0, 0, 0);
+}
+.question-title button:hover{
+    background-color:rgba(212, 212, 211,0.5);
+}
+.question-text{
+    margin: 0px;
+    padding: 10px 0px;
+    background-color: rgba(212, 212, 211,0.5);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.question{
+    margin: 20px;
+}
+
+/* Hide Class */
+.question-text{
+    display: none;
+} 
+.show-text .question-text{
+    display: block;
+}
+.minus-btn{
+    display: none;
+}
+.show-text .minus-btn{
+    display: inline;
+}
+.show-text .plus-btn{
+    display: none;
+}
+.apply-btn{
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: 0.4s ease-in-out;
+    margin: 20px;
+}
+.apply-btn:hover{
+    color: white;
+    background-color: rgba(212, 212, 211,0.5);
+}
+
+.apply-btn a{
+    text-decoration: none;
+    color: black;
+}
