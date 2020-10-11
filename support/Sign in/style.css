@@ -64,16 +64,16 @@ a{
 }
 /* Pop up Animation ends here */
 
-/* @media (min-width : 1000px){
+@media (max-width : 1000px){
     body{
-        font-size: 2.3rem;
+        font-size: 2.1rem;
     }
     .container{
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%,-50%);
-        width: 90%;
+        width: 80%;
         height: 80%;
     }
     .container input{
@@ -96,4 +96,4 @@ a{
         font-size: 2.3rem;
     }
 }
- */
+
