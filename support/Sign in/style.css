@@ -1,14 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body{
     background: url(https://cdn.pixabay.com/photo/2015/11/05/08/21/geometry-1023846_960_720.jpg) center center fixed no-repeat ;
     background-size: cover;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 .container{
     width: 20%;
     margin: auto;
     overflow: hidden;
-    padding: 1rem;
+    padding: 2.5rem 1rem;
     background-color: rgba(255, 255, 255,0.3);
     border-radius: 18px ;
     text-align: center;
@@ -51,6 +56,19 @@ a{
     border-radius: 7px;
     border: none;
 }
+header{
+    background-color: rgba(255, 255, 255,0.2);
+}
+.menu h1 a{
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+.menu h1 a:hover{
+    color: white;
+}
+.menu h1{
+    padding: 10px;
+}
 /* Pop up Animation starts here */
 .container{
     margin-top: -150%;
@@ -75,6 +93,7 @@ a{
         transform: translate(-50%,-50%);
         width: 80%;
         height: 80%;
+        padding: 0px;
     }
     .container input{
         padding: 1rem;
