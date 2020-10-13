@@ -81,10 +81,10 @@ header{
     100%{margin-top: 7%;}
 }
 /* Pop up Animation ends here */
-
-@media (max-width : 1000px){
+/* Mobile */
+@media screen and  (max-width : 486px){
     body{
-        font-size: 2.1rem;
+        font-size: 100%;
     }
     .container{
         position: absolute;
@@ -96,8 +96,8 @@ header{
         padding: 0px;
     }
     .container input{
-        padding: 1rem;
-        font-size: 1.4rem;
+        padding: 3% 5%;
+        font-size: 25%;
     }
     .main{
         position: absolute;
@@ -108,11 +108,30 @@ header{
         align-items: center;
         justify-content: center;
     }
-    .btn{
-        font-size: 2.3rem;
-    }
     .fb{
-        font-size: 2.3rem;
+        font-size: 105%;
     }
 }
 
+/* Tablet */
+@media screen and  (max-width : 780px){
+    .container{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 70%;
+        height: 80%;
+        padding: 0px;
+    }
+
+    .main{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
