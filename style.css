@@ -311,10 +311,17 @@ footer{
       background-color: rgba(82, 82, 82,0.5);
   }
   .section{
+      font-size: 10px;
+      position: absolute;
+      margin: auto;
+      width: 95%;
+      height: 300px;
       margin-top: 20%;
+      margin-left: 2%;
   }
   .lines{
       margin: 0px;
       padding: 0%;
+      text-align: center;
   }
 }
