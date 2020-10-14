@@ -241,7 +241,7 @@ footer{
     }
     .section{
         position: absolute;
-        margin-top: 10%;
+        margin-top: 8%;
         margin-left:10%;
     }
     .images{
@@ -269,9 +269,10 @@ footer{
       position: relative;
       display: none;
       height: auto;
-      background-color: rgba(102, 102, 102, 0.333);
+      background-color: rgba(43, 43, 43, 0.7);
       z-index: 1;
       margin: 0px;
+      border-bottom: 1px solid rgba(255, 255, 255,0.5);
   }
   nav ul{
     position: absolute;
@@ -308,5 +309,12 @@ footer{
   }
   .burger:hover{
       background-color: rgba(82, 82, 82,0.5);
+  }
+  .section{
+      margin-top: 20%;
+  }
+  .lines{
+      margin: 0px;
+      padding: 0%;
   }
 }
