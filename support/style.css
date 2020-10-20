@@ -8,28 +8,90 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url(https://cdn.pixabay.com/photo/2014/09/07/21/50/library-438389_960_720.jpg) fixed center center no-repeat ;
-    background-size: cover;
+    /* background: url(https://cdn.pixabay.com/photo/2014/09/07/21/50/library-438389_960_720.jpg) fixed center center no-repeat ;
+    background-size: cover; */
 }
 
-.head{
+.dropdown{
+    width: 100%;
+    margin: 0 auto;
+    z-index: 2;
+}
+nav{
+    height: 60px;
+    background: rgba(70, 0, 110, 0.4);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-right: 30px;
+}
+nav ul li{
+    background: rgba(95, 2, 107, 0.2);
+    position: relative;
+    list-style : none;
+    display: inline-block;
+}
+nav ul li a{
+    display: block;
+    padding: 0 15px;
+    color: white;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    background: rgba(67, 4, 83, 0.514);
+}
+nav ul ul{
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+nav ul li:hover > ul{
+    display: block;
+}
+nav ul ul li{
+    width : 150px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+nav ul ul ul li{
+    position: relative;
+    top: -60px;
+    left: 150px;
+}
+
+@media screen and (max-width : 1000px){
+    nav ul li a{
+        display: block;
+        padding: 0 10px;
+        color: white;
+        text-decoration: none;
+        line-height: 60px;
+        font-size: 15px;
+    }
+}
+/* End of Navigation */
+/* Container starts here */
+.container{
     position: relative;
     width: 100%;
-    height: 50px;
-    background-color: rgba(119, 93, 136, 0.2);
-    text-align: left;
-    top: 0%;
-    left: 0%;
+    z-index: 0;
 }
-.head h1 a{
-    line-height: 50px;
-    color: rgb(255, 255, 255);
-    padding: 0px 20px;
-    text-decoration: none;
+.container img{
+    position: relative;
+    width: 100%;
+    height: 600px;
 }
+/* Container Ends here */
 section{
+    position: relative;
     margin: 50px 0px;
-    border: 1px solid black;
+    border: 1px solid rgb(64, 3, 80);
     background-color:  rgba(119, 93, 136, 0.2);
     box-shadow: 0 0 6px rgb(0, 0, 0);
 
@@ -39,7 +101,7 @@ section{
     width: 550px;
 }
 .question-title{
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10px;
     border-radius: 5px;
     border-bottom: 1px solid rgba(0, 0, 0,0.4);

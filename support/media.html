@@ -5,11 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Details Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body> 
-    <header class="head">
-        <h1><a href="../index.html">Home</a></h1>
-    </header>
+    <div class="dropdown">
+        <nav>
+            <ul>
+                <li><a href="../">Home</a></li>
+                <li><a href="#">Tutorials <i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="# ">Python</a></li>
+                        <li><a href="# ">JavaScript</a></li>
+                        <li><a href="# ">JQuery</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Web Design <i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="#">Front End</a></li>
+                        <li><a href="#">Back End</a></li>
+                        <li><a href="#">Others <i style="transform: rotate(-90deg);" class="fas fa-caret-down"></i></a>
+                            <ul>
+                                <li><a href="#">Links</a></li>
+                                <li><a href="#">Works</a></li>
+                                <li><a href="#">Status</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+        </nav>
+        <script src="https://kit.fontawesome.com/cbd9935c2e.js" crossorigin="anonymous"></script>
+    </div>
+    <div class="container">
+        <img src="https://cdn.pixabay.com/photo/2014/09/07/21/50/library-438389_960_720.jpg" alt="image">
+    </div>
     <section>
         <!-- Titile -->
         <div class="title">
@@ -68,5 +99,6 @@
         </div>
     </section>
       <script src="script.js"></script>
+      <script src="https://kit.fontawesome.com/cbd9935c2e.js" crossorigin="anonymous"></script>
 </body>
 </html>
