@@ -78,6 +78,11 @@ h4{
     margin-top: 30px;
     padding: 10px 0px;
 }
+/* Bootstrap Alert */
+#alert{
+    display: none;
+}
+/* Bootstrap Alert ends */
 /* Pop up Animation starts here */
 .container{
     margin-top: -150%;
